@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // Pages
-import { Home, Team } from "../pages";
+import { Home, Team } from "../views";
 
 const AppRoutes = () => {
   return (
