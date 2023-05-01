@@ -11,6 +11,11 @@ const navLinks = [
     duration: 400,
   },
   {
+    name: "Poson Zone",
+    to: "poson-zone",
+    duration: 400,
+  },
+  {
     name: "Our Mentors",
     to: "mentors",
     duration: 400,
