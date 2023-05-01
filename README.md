@@ -1,3 +1,6 @@
+![Pull Requests](https://badgen.net/github/open-issues/ms-club-sliit/sliit-poson-web)
+![Contributors](https://badgen.net/github/contributors/ms-club-sliit/sliit-poson-web)
+
 # SLIIT Faculty of Computing Interactive Media POSON - Website
 
 ## Quick Links
