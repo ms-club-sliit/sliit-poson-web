@@ -30,7 +30,7 @@ const navLinks = [
 
 const Header = () => {
   return (
-    <Popover className="sticky top-0 z-50 bg-white">
+    <Popover className="sticky top-0 z-50 bg-white shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex justify-between items-center border-0 py-3 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
