@@ -3,9 +3,9 @@
  */
 const Team = () => {
   return (
-    <>
-      <h1 className="text-3xl font-bold underline">Our Team</h1>
-    </>
+    <div className="flex flex-col items-center justify-center h-screen bg-gray-100 dark:bg-gray-900">
+      <h1 className="text-3xl font-bold underline dark:text-white">Our Team Page</h1>
+    </div>
   );
 };
 
