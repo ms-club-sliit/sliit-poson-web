@@ -25,21 +25,21 @@ const Hero = () => {
 
   return (
     <div className="flex flex-col font-poppins items-center justify-center h-screen bg-gradient-to-r from-[#30013B] to-[#510263] dark:bg-gray-900">
-      <div className="container h-full mx-auto px-5">
+      <div className="mt-24 container h-full mx-auto ">
         <div className="flex flex-wrap lg:flex-nowrap lg:flex-row h-full xl:px-12">
           <div className="flex-1 flex items-center justify-center lg:justify-start basis-full lg:basis-1/2 my-5">
             <div>
               <div className="text-5xl text-white font-medium">
                 Virtual Vesak <br />
                 Festival
-                <div className="inline sm:block text-gold font-railway font-normal">
+                <div className="block md:inline text-gold font-railway font-normal">
                   {' '}
                   202<span className="text-6xl absolute">3</span>
                 </div>
               </div>
               <p className="text-gold mt-5">SLIIT Interactive Media </p>
               <hr className="bg-gold h-px border-none" />
-              <div className="mt-10 lg:mt-32 text-white">
+              <div className="mt-10 lg:mt-20 text-white">
                 <div className="border border-gold inline-block px-4 py-3 rounded-3xl">
                   <p className="font-sans">
                     Explore Now
@@ -49,8 +49,8 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <div className=" flex-1 pb-24 flex justify-center lg:justify-start basis-full lg:basis-1/2">
-            <div className="static bg-red-300 rounded-b-full w-2/3 lg:w-full h-[500px] lg:h-[75vh] overflow-hidden ">
+          <div className="flex-1 flex justify-center lg:justify-start  h-[75vh] lg:h-[105vh] basis-full lg:basis-1/2">
+            <div className="static bg-red-300 rounded-b-full rounded-t-[70rem] w-full mx-4 lg:w-full overflow-hidden ">
               <img
                 alt={''}
                 src={images[currentImg]}
