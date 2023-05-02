@@ -45,7 +45,7 @@ const Hero = () => {
     >
       <div className="mt-24 container h-full mx-auto ">
         <div className="flex flex-wrap lg:flex-nowrap lg:flex-row h-full xl:px-12">
-          <div className="flex-1 flex items-center justify-center lg:justify-start basis-full lg:basis-1/2 my-5 ml-4">
+          <div className="flex-1 flex items-center justify-center lg:justify-start basis-full lg:basis-1/2 my-5 mx-4">
             <div>
               <div className="text-5xl text-white font-medium">
                 Virtual Vesak <br />
@@ -55,8 +55,12 @@ const Hero = () => {
                   202<span className="text-6xl absolute">3</span>
                 </div>
               </div>
-              <p className="text-gold mt-5">SLIIT Interactive Media </p>
-              <hr className="bg-gold h-px border-none" />
+              <div className="flex">
+                <div className="text-gold mt-5 block">
+                  SLIIT Interactive Media
+                </div>
+                <div className="border-b border-gold h-9 ml-2 grow"></div>
+              </div>
               <div className="mt-10 lg:mt-20 text-white">
                 <div
                   className="border border-gold inline-block px-4 py-3 rounded-3xl cursor-pointer hover:text-gold transition"
