@@ -44,7 +44,7 @@ const Hero = () => {
   return (
     <div
       id="Hero"
-      className="flex flex-col font-poppins items-center justify-center h-screen bg-gradient-to-r from-[#30013B] to-[#510263] dark:bg-gray-900"
+      className="flex flex-col font-poppins items-center justify-center h-screen bg-gradient-to-r from-[#30013B] to-[#510263] dark:bg-none dark:bg-gray-900"
     >
       <div className="mt-24 container h-full mx-auto ">
         <div className="flex flex-wrap lg:flex-nowrap lg:flex-row h-full xl:px-12">
@@ -82,7 +82,7 @@ const Hero = () => {
               />
               <FontAwesomeIcon
                 onClick={clickExplore}
-                className="absolute hidden lg:block -bottom-5 rounded-full bg-[#48093F] text-gold mr-4 cursor-pointer text-white p-5"
+                className="absolute hidden lg:block -bottom-5 rounded-full bg-[#48093F] text-gold mr-4 cursor-pointer text-white p-5 dark:bg-gold dark:text-black"
                 icon={faArrowDown}
               />
               <div className="absolute rounded-full bg-[#48093F] text-white right-0 top-3/4 lg:top-1/2 lg:right-0 xl:left-auto xl:right-[10vw] px-4 py-2 z-10">
