@@ -48,7 +48,7 @@ const Hero = () => {
     >
       <div className="mt-24 container h-full mx-auto ">
         <div className="flex flex-wrap lg:flex-nowrap lg:flex-row h-full xl:px-12">
-          <div className="flex-1 flex items-center justify-center lg:justify-start basis-full lg:basis-1/2 my-5">
+          <div className="flex-1 flex items-center justify-center lg:justify-start basis-full lg:basis-1/2 my-5 ml-4">
             <div>
               <div className="text-5xl text-white font-medium">
                 Virtual Vesak <br />
@@ -91,7 +91,9 @@ const Hero = () => {
                   className="text-gold mr-4 cursor-pointer"
                   icon={faArrowLeft}
                 />
-                0{currentImg + 1} / 0{images.length}
+                <div className="select-none inline">
+                  0{currentImg + 1} / 0{images.length}
+                </div>
                 <FontAwesomeIcon
                   onClick={nextImg}
                   className="text-gold ml-4 cursor-pointer"
