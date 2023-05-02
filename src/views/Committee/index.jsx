@@ -5,7 +5,7 @@ import { committee } from "../../data/committee";
 const Committee = () => {
   return (
     <div className="flex flex-col items-center justify-center h-full gap-[4rem] pt-[140px] pb-[115px] bg-gradient-to-r from-[#f8dbfe] to-[#f0b1fe] dark:bg-gradient-to-r dark:from-[#080808] dark:to-[#161616]">
-      <h1 className="text-5xl font-semibold dark:text-white">
+      <h1 className="text-5xl font-semibold dark:text-white text-center leading-[80px]">
         <a className="underline decoration-[#fdac20] underline-offset-[1.5rem]">
           Org
         </a>
