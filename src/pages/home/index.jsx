@@ -1,4 +1,4 @@
-import { Header } from "../../components";
+import { Header, Footer } from "../../components";
 import Carousel from "./Carousel";
 import Committee from "./Committee";
 import Mentors from "./Mentors";
@@ -14,6 +14,7 @@ const index = () => {
       <Mentors />
       <Committee />
       <OurWork />
+      <Footer />
     </>
   );
 };
