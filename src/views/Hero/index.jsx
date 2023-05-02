@@ -27,7 +27,7 @@ const Hero = () => {
     <div className="flex flex-col font-poppins items-center justify-center h-screen bg-gradient-to-r from-[#30013B] to-[#510263] dark:bg-gray-900">
       <div className="container h-full mx-auto px-5">
         <div className="flex flex-wrap lg:flex-nowrap lg:flex-row h-full xl:px-12">
-          <div className="flex-1 flex items-center justify-center lg:justify-start basis-full lg:basis-1/2">
+          <div className="flex-1 flex items-center justify-center lg:justify-start basis-full lg:basis-1/2 my-5">
             <div>
               <div className="text-5xl text-white font-medium">
                 Virtual Vesak <br />
@@ -54,10 +54,10 @@ const Hero = () => {
               <img
                 alt={''}
                 src={images[currentImg]}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover "
               />
               <div
-                className="absolute rounded-full bg-[#48093F] text-white right-0  px-4 py-2 z-10"
+                className="absolute rounded-full bg-[#48093F] text-white right-20 top-3/4 lg:top-1/2 lg:right-0 xl:left-3/4 xl:right-auto px-4 py-2 z-10"
                 onClick={changeImg}
               >
                 <FontAwesomeIcon
