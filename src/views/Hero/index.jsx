@@ -78,7 +78,7 @@ const Hero = () => {
             <div className="static rounded-b-full rounded-t-[70rem] w-full mx-4 lg:w-full overflow-hidden ">
               <img
                 alt={'image'}
-                src={images[currentImg].src}
+                src={process.env.PUBLIC_URL + images[currentImg].src}
                 className="w-full h-full object-cover "
               />
               <FontAwesomeIcon
