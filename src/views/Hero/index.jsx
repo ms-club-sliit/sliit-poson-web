@@ -1,23 +1,20 @@
-/**
- * Hero Section
- */
+//Hero Section
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faArrowRight,
   faArrowLeft,
   faArrowDown,
 } from '@fortawesome/free-solid-svg-icons';
+import { useState } from 'react';
 
 //images
-import img1 from '../../assets/images/Hero/img1.webp';
-import img2 from '../../assets/images/Hero/img2.webp';
-import img3 from '../../assets/images/Hero/img3.webp';
-import { useState } from 'react';
+import image from '../../data/heroImages.json';
 
 const Hero = () => {
   const [currentImg, setCurrentImg] = useState(0);
 
-  const images = [img3, img1, img2];
+  const images = image.imageArray;
 
   const nextImg = () => {
     if (currentImg + 1 == images.length) {
@@ -44,7 +41,7 @@ const Hero = () => {
   return (
     <div
       id="Hero"
-      className="flex flex-col font-poppins items-center justify-center h-screen bg-gradient-to-r from-[#30013B] to-[#510263] dark:bg-none dark:bg-gray-900"
+      className="flex flex-col font-poppins items-center justify-center h-screen bg-gradient-to-r from-[#30013B] to-[#510263] dark:bg-none dark:bg-[#1E1E1E]"
     >
       <div className="mt-24 container h-full mx-auto ">
         <div className="flex flex-wrap lg:flex-nowrap lg:flex-row h-full xl:px-12">
@@ -77,7 +74,7 @@ const Hero = () => {
             <div className="static rounded-b-full rounded-t-[70rem] w-full mx-4 lg:w-full overflow-hidden ">
               <img
                 alt={'image'}
-                src={images[currentImg]}
+                src={images[currentImg].src}
                 className="w-full h-full object-cover "
               />
               <FontAwesomeIcon
