@@ -2,7 +2,11 @@
  * Hero Section
  */
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+import {
+  faArrowRight,
+  faArrowLeft,
+  faArrowDown,
+} from '@fortawesome/free-solid-svg-icons';
 
 //images
 import img1 from '../../assets/images/Hero/img1.webp';
@@ -31,6 +35,12 @@ const Hero = () => {
     }
   };
 
+  const clickExplore = () => {
+    const element = document.getElementById('vesak-zone');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <div
       id="Hero"
@@ -51,10 +61,13 @@ const Hero = () => {
               <p className="text-gold mt-5">SLIIT Interactive Media </p>
               <hr className="bg-gold h-px border-none" />
               <div className="mt-10 lg:mt-20 text-white">
-                <div className="border border-gold inline-block px-4 py-3 rounded-3xl">
+                <div
+                  className="border border-gold inline-block px-4 py-3 rounded-3xl cursor-pointer hover:text-gold transition"
+                  onClick={clickExplore}
+                >
                   <p className="font-sans">
                     Explore Now
-                    <FontAwesomeIcon className="ml-4" icon={faArrowRight} />
+                    <FontAwesomeIcon className="ml-8 " icon={faArrowRight} />
                   </p>
                 </div>
               </div>
@@ -67,16 +80,21 @@ const Hero = () => {
                 src={images[currentImg]}
                 className="w-full h-full object-cover "
               />
+              <FontAwesomeIcon
+                onClick={clickExplore}
+                className="absolute hidden lg:block -bottom-5 rounded-full bg-[#48093F] text-gold mr-4 cursor-pointer text-white p-5"
+                icon={faArrowDown}
+              />
               <div className="absolute rounded-full bg-[#48093F] text-white right-0 top-3/4 lg:top-1/2 lg:right-0 xl:left-auto xl:right-[10vw] px-4 py-2 z-10">
                 <FontAwesomeIcon
                   onClick={prevImg}
-                  className="text-gold mr-4"
+                  className="text-gold mr-4 cursor-pointer"
                   icon={faArrowLeft}
                 />
                 0{currentImg + 1} / 0{images.length}
                 <FontAwesomeIcon
                   onClick={nextImg}
-                  className="text-gold ml-4"
+                  className="text-gold ml-4 cursor-pointer"
                   icon={faArrowRight}
                 />
               </div>
