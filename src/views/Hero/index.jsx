@@ -9,12 +9,12 @@ import {
 import { useState } from 'react';
 
 //images
-import image from '../../data/heroImages.json';
+import { imageArray } from '../../data/heroImages.js';
 
 const Hero = () => {
   const [currentImg, setCurrentImg] = useState(0);
 
-  const images = image.imageArray;
+  const images = imageArray;
 
   const nextImg = () => {
     if (currentImg + 1 == images.length) {
@@ -78,7 +78,7 @@ const Hero = () => {
             <div className="static rounded-b-full rounded-t-[70rem] w-full mx-4 lg:w-full overflow-hidden ">
               <img
                 alt={'image'}
-                src={process.env.PUBLIC_URL + images[currentImg].src}
+                src={images[currentImg].src}
                 className="w-full h-full object-cover "
               />
               <FontAwesomeIcon
