@@ -13,9 +13,9 @@ import { useState } from 'react';
 const Hero = () => {
   const [currentImg, setCurrentImg] = useState(0);
 
-  const images = [img1, img2, img3];
+  const images = [img3, img1, img2];
 
-  const changeImg = () => {
+  const nextImg = () => {
     if (currentImg + 1 == images.length) {
       setCurrentImg(0);
     } else {
@@ -23,8 +23,19 @@ const Hero = () => {
     }
   };
 
+  const prevImg = () => {
+    if (currentImg - 1 == -1) {
+      setCurrentImg(images.length - 1);
+    } else {
+      setCurrentImg(currentImg - 1);
+    }
+  };
+
   return (
-    <div className="flex flex-col font-poppins items-center justify-center h-screen bg-gradient-to-r from-[#30013B] to-[#510263] dark:bg-gray-900">
+    <div
+      id="Hero"
+      className="flex flex-col font-poppins items-center justify-center h-screen bg-gradient-to-r from-[#30013B] to-[#510263] dark:bg-gray-900"
+    >
       <div className="mt-24 container h-full mx-auto ">
         <div className="flex flex-wrap lg:flex-nowrap lg:flex-row h-full xl:px-12">
           <div className="flex-1 flex items-center justify-center lg:justify-start basis-full lg:basis-1/2 my-5">
@@ -56,16 +67,15 @@ const Hero = () => {
                 src={images[currentImg]}
                 className="w-full h-full object-cover "
               />
-              <div
-                className="absolute rounded-full bg-[#48093F] text-white right-20 top-3/4 lg:top-1/2 lg:right-0 xl:left-3/4 xl:right-auto px-4 py-2 z-10"
-                onClick={changeImg}
-              >
+              <div className="absolute rounded-full bg-[#48093F] text-white right-0 top-3/4 lg:top-1/2 lg:right-0 xl:left-auto xl:right-[10vw] px-4 py-2 z-10">
                 <FontAwesomeIcon
+                  onClick={prevImg}
                   className="text-gold mr-4"
                   icon={faArrowLeft}
                 />
                 0{currentImg + 1} / 0{images.length}
                 <FontAwesomeIcon
+                  onClick={nextImg}
                   className="text-gold ml-4"
                   icon={faArrowRight}
                 />
