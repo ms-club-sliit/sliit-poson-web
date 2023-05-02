@@ -85,10 +85,10 @@ const Hero = () => {
                 className="absolute hidden lg:block -bottom-5 rounded-full bg-[#48093F] text-gold mr-4 cursor-pointer text-white p-5 dark:bg-gold dark:text-black"
                 icon={faArrowDown}
               />
-              <div className="absolute rounded-full bg-[#48093F] text-white right-0 top-3/4 lg:top-1/2 lg:right-0 xl:left-auto xl:right-[10vw] px-4 py-2 z-10">
+              <div className="absolute rounded-full bg-[#48093F] text-white right-0 top-3/4 lg:top-1/2 lg:right-0 xl:left-auto xl:right-[10vw] px-4 py-2 z-10 dark:bg-[#161616]">
                 <FontAwesomeIcon
                   onClick={prevImg}
-                  className="text-gold mr-4 cursor-pointer"
+                  className="text-gold dark:text-white mr-4 cursor-pointer"
                   icon={faArrowLeft}
                 />
                 <div className="select-none inline">
@@ -96,7 +96,7 @@ const Hero = () => {
                 </div>
                 <FontAwesomeIcon
                   onClick={nextImg}
-                  className="text-gold ml-4 cursor-pointer"
+                  className="text-gold dark:text-white ml-4 cursor-pointer"
                   icon={faArrowRight}
                 />
               </div>
