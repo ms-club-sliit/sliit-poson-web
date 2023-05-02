@@ -74,9 +74,9 @@ const Hero = () => {
             </div>
           </div>
           <div className="flex-1 flex justify-center lg:justify-start  h-[75vh] lg:h-[105vh] basis-full lg:basis-1/2">
-            <div className="static bg-red-300 rounded-b-full rounded-t-[70rem] w-full mx-4 lg:w-full overflow-hidden ">
+            <div className="static rounded-b-full rounded-t-[70rem] w-full mx-4 lg:w-full overflow-hidden ">
               <img
-                alt={''}
+                alt={'image'}
                 src={images[currentImg]}
                 className="w-full h-full object-cover "
               />
