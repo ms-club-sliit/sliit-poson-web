@@ -1,13 +1,18 @@
 ![Pull Requests](https://badgen.net/github/open-issues/ms-club-sliit/sliit-poson-web)
 ![Contributors](https://badgen.net/github/contributors/ms-club-sliit/sliit-poson-web)
 
-# SLIIT Faculty of Computing Interactive Media POSON - Website
+# SLIIT Faculty of Computing Interactive Media Vesak - Website
 
 ## Quick Links
   - [Tech Stack](#tech-stack)
+  - [Figma Design](#figma-design)
   - [How to contribute](#how-to-contribute)
   - [I really want to contribute but where do I start?](#i-really-want-to-contribute-but-where-do-i-start)
   - [Contributors](#contributors)
+
+## [Figma Design](#figma-design)
+
+- [SLIIT Vesak](https://www.figma.com/file/x3drrI3KkptOZNjbq9kixj/sliitposon?node-id=0-1&t=hA7lROMdab21HAN8-0)
 
 ## [Tech Stack](#Tech-Stack)
 
