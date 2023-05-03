@@ -27,7 +27,7 @@ const Team = () => {
             Responsible for making the magic happen
           </h2>
         </div>
-        <div className="container sm:p-0 md:p-10 sm:mt-[50px] md:mt-[10px] lg:mt-[10px] sm:grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 sm:gap-5 md:gap-8">
+        <div className="container sm:p-0 md:p-10 sm:mt-[50px] md:mt-[10px] lg:mt-[10px] grid sm:grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-5 md:gap-8">
           {committee.map((member) => (
             <CarouselCard key={member.id} mentor={member} />
           ))}
