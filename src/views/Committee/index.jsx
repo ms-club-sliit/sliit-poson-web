@@ -1,7 +1,6 @@
-import CarouselCard from '../../components/CarouselCard/CarouselCard';
-import { Link } from 'react-router-dom';
-import { committee } from '../../data/committee';
-
+import CarouselCard from "../../components/CarouselCard/CarouselCard";
+import { Link } from "react-router-dom";
+import { committee } from "../../data/committee";
 
 const Committee = () => {
   return (
@@ -15,12 +14,12 @@ const Committee = () => {
       <div
         className="container"
         style={{
-          display: 'flex',
-          flexDirection: 'row',
-          width: '100vw',
-          overflowX: 'scroll',
-          gap: '2rem',
-          padding: '2rem',
+          display: "flex",
+          flexDirection: "row",
+          width: "100vw",
+          overflowX: "scroll",
+          gap: "2rem",
+          padding: "2rem",
         }}
       >
         {committee.map((member) => (
@@ -30,9 +29,10 @@ const Committee = () => {
       <Link to="/team">
         <p
           style={{
-            fontWeight: '50',
+            fontWeight: "50",
+            fontSize: "18px",
           }}
-          className="px-20 py-6 text-sm text-[22px] text-white bg-[#8600a5] rounded-full hover:bg-[#8600a5] dark:bg-[#161616] dark:border-solid dark:border-[0.5px] dark:border-[#ffffff75]"
+          className="px-20 py-6 text-sm text-[22px] text-white bg-[#8600a5] rounded-full hover:bg-[#fdac20] dark:bg-[#161616] dark:border-solid dark:border-[0.5px] dark:border-[#ffffff75] dark:hover:border-[#fdac20] dark:hover:text-[#fdac20]"
         >
           View Our Team
         </p>
