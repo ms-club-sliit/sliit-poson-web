@@ -25,7 +25,7 @@ const Header = () => {
     };
   }, []);
   return (
-<div className={`fixed z-999 w-full ${isScrolledOutOfHome ? 'bg-purple-900' : 'bg-transparent'}`}>
+<div className={`fixed z-50 w-full ${isScrolledOutOfHome ? 'bg-purple-900 dark:bg-gray-900' : 'bg-transparent'}`}>
   <div className="flex justify-between items-center">
     <h1 className="text-white font-normal font-circular font-size-24 leading-52 m-5 ml-5 md:ml-20">SLIIT INTERACTIVE MEDIA</h1>
     <nav className="bg-gray-50 m-5 shadow-lg rounded-full inline-flex justify-center mr-5 md:mr-20">
