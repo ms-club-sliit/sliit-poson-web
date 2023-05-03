@@ -8,8 +8,9 @@ const Header = () => {
   };
 
   return (
-    <nav className="fixed z-999 bg-gray-50 shadow-lg rounded-full inline-flex flex justify-center">
-      <div className="mx-auto px-4 py-3 flex items-center justify-between relative">
+    <div className='flex justify-center'>
+    <nav className="fixed z-999 bg-gray-50 shadow-lg rounded-full inline-flex justify-center ">
+      <div className="px-4 py-3 flex items-center justify-between relative">
         <div className="flex items-center">
           <a href="#home" className={`font-normal text-gray-800 font-bold mr-4 ${activeLink === 'home' ? 'bg-purple-900 dark:bg-gray-900 text-white rounded-full px-6 py-2' : ''}`} onClick={() => handleLinkClick('home')}>
             Home
@@ -29,6 +30,7 @@ const Header = () => {
         </div>
       </div>
     </nav>
+    </div>
   );
 };
 
