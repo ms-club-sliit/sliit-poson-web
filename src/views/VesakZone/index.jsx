@@ -2,8 +2,7 @@ import { Link } from "react-router-dom";
 
 const VesakZone = () => {
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-gray-100 dark:bg-gray-900">
-
+    <div className="flex flex-col items-center justify-center min-h-screen pt-[140px] pb-[115px] dark:bg-gradient-to-r dark:from-[#080808] dark:to-[#161616]">
       <h1 className="text-5xl font-semibold dark:text-white text-center leading-[70px]">
         <a className="underline decoration-[#fdac20] underline-offset-[1.0rem]">
           Enter

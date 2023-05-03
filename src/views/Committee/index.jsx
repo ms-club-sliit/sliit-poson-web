@@ -1,6 +1,6 @@
-import CarouselCard from "../../components/CarouselCard/CarouselCard";
-import { Link } from "react-router-dom";
-import { committee } from "../../data/committee";
+import CarouselCard from '../../components/CarouselCard/CarouselCard';
+import { Link } from 'react-router-dom';
+import { committee } from '../../data/committee';
 
 
 const Committee = () => {
@@ -15,22 +15,22 @@ const Committee = () => {
       <div
         className="container"
         style={{
-          display: "flex",
-          flexDirection: "row",
-          width: "100vw",
-          overflowX: "scroll",
-          gap: "2rem",
-          padding: "2rem",
+          display: 'flex',
+          flexDirection: 'row',
+          width: '100vw',
+          overflowX: 'scroll',
+          gap: '2rem',
+          padding: '2rem',
         }}
       >
         {committee.map((member) => (
-          <CarouselCard mentor={member} />
+          <CarouselCard key={member.id} mentor={member} />
         ))}
       </div>
       <Link to="/team">
         <p
           style={{
-            fontWeight: "50",
+            fontWeight: '50',
           }}
           className="px-20 py-6 text-sm text-[22px] text-white bg-[#8600a5] rounded-full hover:bg-[#8600a5] dark:bg-[#161616] dark:border-solid dark:border-[0.5px] dark:border-[#ffffff75]"
         >
