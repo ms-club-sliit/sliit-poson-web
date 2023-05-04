@@ -36,8 +36,8 @@ const Header = () => {
       className={
         `fixed z-50 w-full ${
           isScrolledOutOfHome
-            ? 'bg-purple-900 dark:bg-gray-900'
-            : 'bg-transparent'
+            ? 'bg-purple-900 dark:bg-gray-900 '
+            : 'md:bg-transparent '
         }` + `${hamClicked ? 'bg-purple-900 dark:bg-gray-900' : ''}`
       }
     >
@@ -64,7 +64,7 @@ const Header = () => {
                 href="#home"
                 className={`font-normal text-gray-800 font-bold mr-2 md:mr-4 ${
                   activeLink === 'home'
-                    ? 'bg-purple-900 dark:bg-gray-900 text-white rounded-full px-4 py-2'
+                    ? 'mt-1 md:mt-auto bg-purple-900 dark:bg-gray-900 text-white rounded-full px-4 py-2'
                     : ''
                 }`}
                 onClick={() => handleLinkClick('home')}
@@ -73,7 +73,7 @@ const Header = () => {
               </a>
               <a
                 href="#mentors"
-                className={`font-normal text-gray-800 font-bold mr-2 md:mr-4 ${
+                className={`mt-2 md:mt-auto font-normal text-gray-800 font-bold mr-2 md:mr-4 ${
                   activeLink === 'mentors'
                     ? 'bg-purple-900 dark:bg-gray-900 text-white rounded-full px-4 py-2'
                     : ''
@@ -84,7 +84,7 @@ const Header = () => {
               </a>
               <a
                 href="#members"
-                className={`font-normal text-gray-800 font-bold mr-2 md:mr-4 ${
+                className={`mt-2 md:mt-auto md:mt-auto font-normal text-gray-800 font-bold mr-2 md:mr-4 ${
                   activeLink === 'team'
                     ? 'bg-purple-900 dark:bg-gray-900 text-white rounded-full px-4 py-2'
                     : ''
@@ -95,7 +95,7 @@ const Header = () => {
               </a>
               <a
                 href="#ourwork"
-                className={`font-normal text-gray-800 font-bold mr-2 md:mr-4 ${
+                className={`mt-2 md:mt-auto font-normal text-gray-800 font-bold mr-2 md:mr-4 ${
                   activeLink === 'work'
                     ? 'bg-purple-900 dark:bg-gray-900 text-white rounded-full px-4 py-2'
                     : ''
@@ -106,7 +106,7 @@ const Header = () => {
               </a>
               <a
                 href="#contactus"
-                className={`font-normal text-gray-800 font-bold mr-2 md:mr-4 ${
+                className={`mt-2 md:mt-auto font-normal text-gray-800 font-bold mr-2 md:mr-4 ${
                   activeLink === 'contact'
                     ? 'bg-purple-900 dark:bg-gray-900 text-white rounded-full px-4 py-2'
                     : ''
