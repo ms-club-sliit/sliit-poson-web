@@ -84,7 +84,7 @@ const Header = () => {
               </a>
               <a
                 href="#members"
-                className={`mt-2 md:mt-0 md:mt-auto font-normal text-gray-800 font-bold mr-2 md:mr-4 ${
+                className={`mt-2 md:mt-0 font-normal text-gray-800 font-bold mr-2 md:mr-4 ${
                   activeLink === 'team'
                     ? 'bg-purple-900 dark:bg-gray-900 text-white rounded-full px-4 py-2'
                     : ''
