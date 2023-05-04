@@ -62,9 +62,9 @@ const Header = () => {
             <div className="flex flex-col m-5 md:m-auto md:flex-row items-center">
               <a
                 href="#home"
-                className={`font-normal text-gray-800 font-bold mr-2 md:mr-4 ${
+                className={`mt-2 md:mt-0 font-normal text-gray-800 font-bold mr-2 md:mr-4 ${
                   activeLink === 'home'
-                    ? 'mt-1 md:mt-auto bg-purple-900 dark:bg-gray-900 text-white rounded-full px-4 py-2'
+                    ? ' bg-purple-900 dark:bg-gray-900 text-white rounded-full px-4 py-2'
                     : ''
                 }`}
                 onClick={() => handleLinkClick('home')}
@@ -73,7 +73,7 @@ const Header = () => {
               </a>
               <a
                 href="#mentors"
-                className={`mt-2 md:mt-auto font-normal text-gray-800 font-bold mr-2 md:mr-4 ${
+                className={`mt-2 md:mt-0 font-normal text-gray-800 font-bold mr-2 md:mr-4 ${
                   activeLink === 'mentors'
                     ? 'bg-purple-900 dark:bg-gray-900 text-white rounded-full px-4 py-2'
                     : ''
@@ -84,7 +84,7 @@ const Header = () => {
               </a>
               <a
                 href="#members"
-                className={`mt-2 md:mt-auto md:mt-auto font-normal text-gray-800 font-bold mr-2 md:mr-4 ${
+                className={`mt-2 md:mt-0 md:mt-auto font-normal text-gray-800 font-bold mr-2 md:mr-4 ${
                   activeLink === 'team'
                     ? 'bg-purple-900 dark:bg-gray-900 text-white rounded-full px-4 py-2'
                     : ''
@@ -95,7 +95,7 @@ const Header = () => {
               </a>
               <a
                 href="#ourwork"
-                className={`mt-2 md:mt-auto font-normal text-gray-800 font-bold mr-2 md:mr-4 ${
+                className={`mt-2 md:mt-0 font-normal text-gray-800 font-bold mr-2 md:mr-4 ${
                   activeLink === 'work'
                     ? 'bg-purple-900 dark:bg-gray-900 text-white rounded-full px-4 py-2'
                     : ''
@@ -106,7 +106,7 @@ const Header = () => {
               </a>
               <a
                 href="#contactus"
-                className={`mt-2 md:mt-auto font-normal text-gray-800 font-bold mr-2 md:mr-4 ${
+                className={`mt-2 md:mt-0 font-normal text-gray-800 font-bold mr-2 md:mr-4 ${
                   activeLink === 'contact'
                     ? 'bg-purple-900 dark:bg-gray-900 text-white rounded-full px-4 py-2'
                     : ''
