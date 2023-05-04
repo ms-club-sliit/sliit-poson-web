@@ -45,9 +45,9 @@ const Hero = () => {
     >
       <div className="mt-24 container h-full mx-auto ">
         <div className="flex flex-wrap lg:flex-nowrap lg:flex-row h-full xl:px-12">
-          <div className="flex-1 flex items-center justify-center lg:justify-start basis-full lg:basis-1/2 my-5 mx-4">
+          <div className="select-none md:select-text flex-1 flex items-center justify-center lg:justify-start basis-full lg:basis-1/2 my-5 mx-4">
             <div>
-              <div className="text-5xl text-white font-medium">
+              <div className="text-5xl text-white font-medium ">
                 Virtual Vesak <br />
                 Festival
                 <div className="block md:inline text-gold font-railway font-normal">
@@ -74,7 +74,7 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <div className="flex-1 flex justify-center lg:justify-start  h-[75vh] lg:h-[105vh] basis-full lg:basis-1/2">
+          <div className="select-none md:select-text flex-1 flex justify-center lg:justify-start  h-[75vh] lg:h-[105vh] basis-full lg:basis-1/2">
             <div className="static rounded-b-full rounded-t-[70rem] w-full mx-4 lg:w-full overflow-hidden ">
               <img
                 alt={'image'}
