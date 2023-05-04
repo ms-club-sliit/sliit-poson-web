@@ -38,7 +38,12 @@ const Header = () => {
           isScrolledOutOfHome
             ? 'bg-purple-900 dark:bg-gray-900 '
             : 'md:bg-transparent '
-        }` + `${hamClicked ? 'bg-purple-900 dark:bg-gray-900' : ''}`
+        }` +
+        `${
+          hamClicked && window.innerWidth < 768
+            ? 'bg-purple-900 dark:bg-gray-900'
+            : ''
+        }`
       }
     >
       <div className="flex justify-between md:items-center flex-col md:flex-row">
