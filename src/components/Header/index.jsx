@@ -1,9 +1,9 @@
-import { useState, useEffect } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { useState, useEffect } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
-  const [activeLink, setActiveLink] = useState('home');
+  const [activeLink, setActiveLink] = useState("home");
   const [isScrolledOutOfHome, setIsScrolledOutOfHome] = useState(false);
   const [hamClicked, setHamClicked] = useState(false);
 
@@ -13,17 +13,17 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const homeSection = document.querySelector('#home');
+      const homeSection = document.querySelector("#home");
       if (homeSection) {
         const homeSectionRect = homeSection.getBoundingClientRect();
         setIsScrolledOutOfHome(window.scrollY >= homeSectionRect.bottom);
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -36,13 +36,13 @@ const Header = () => {
       className={
         `fixed z-50 w-full ${
           isScrolledOutOfHome
-            ? 'bg-purple-900 dark:bg-gray-900 '
-            : 'md:bg-transparent '
+            ? "bg-purple-900 dark:bg-gray-900 "
+            : "md:bg-transparent "
         }` +
         `${
           hamClicked && window.innerWidth < 768
-            ? 'bg-purple-900 dark:bg-gray-900'
-            : ''
+            ? "bg-purple-900 dark:bg-gray-900"
+            : ""
         }`
       }
     >
@@ -53,14 +53,14 @@ const Header = () => {
         <FontAwesomeIcon
           icon={faBars}
           className={
-            'md:hidden text-3xl cursor-pointer absolute right-5 top-5 text-white '
+            "md:hidden text-3xl cursor-pointer absolute right-5 top-5 text-white "
           }
           onClick={handleHamClick}
         />
         <nav
           className={
-            (hamClicked ? 'block  ' : 'hidden ') +
-            'md:block bg-gray-50 md:m-5 shadow-lg md:rounded-full w-full md:w-auto inline-flex justify-center mr-5 md:mr-20 select-none md:select-text'
+            (hamClicked ? "block  " : "hidden ") +
+            "md:block bg-gray-50 md:m-5 shadow-lg md:rounded-full w-full md:w-auto inline-flex justify-center mr-5 md:mr-20 select-none md:select-text"
           }
         >
           <div className=" px-2 py-1 flex items-center justify-between relative">
@@ -68,26 +68,26 @@ const Header = () => {
               <a
                 href="#home"
                 className={`mt-2 md:mt-0 font-normal text-gray-800 font-bold mr-2 md:mr-4 ${
-                  activeLink === 'home'
-                    ? ' bg-purple-900 dark:bg-gray-900 text-white rounded-full px-4 py-2'
-                    : ''
+                  activeLink === "home"
+                    ? " bg-purple-900 dark:bg-gray-900 text-white rounded-full px-4 py-2"
+                    : ""
                 }`}
-                onClick={() => handleLinkClick('home')}
+                onClick={() => handleLinkClick("home")}
               >
                 Home
               </a>
               <a
                 href="#mentors"
                 className={`mt-2 md:mt-0 font-normal text-gray-800 font-bold mr-2 md:mr-4 ${
-                  activeLink === 'mentors'
-                    ? 'bg-purple-900 dark:bg-gray-900 text-white rounded-full px-4 py-2'
-                    : ''
+                  activeLink === "mentors"
+                    ? "bg-purple-900 dark:bg-gray-900 text-white rounded-full px-4 py-2"
+                    : ""
                 }`}
-                onClick={() => handleLinkClick('mentors')}
+                onClick={() => handleLinkClick("mentors")}
               >
                 Our Mentors
               </a>
-              <a
+              {/* <a
                 href="#members"
                 className={`mt-2 md:mt-0 font-normal text-gray-800 font-bold mr-2 md:mr-4 ${
                   activeLink === 'team'
@@ -97,26 +97,26 @@ const Header = () => {
                 onClick={() => handleLinkClick('team')}
               >
                 Our Team
-              </a>
+              </a> */}
               <a
                 href="#ourwork"
                 className={`mt-2 md:mt-0 font-normal text-gray-800 font-bold mr-2 md:mr-4 ${
-                  activeLink === 'work'
-                    ? 'bg-purple-900 dark:bg-gray-900 text-white rounded-full px-4 py-2'
-                    : ''
+                  activeLink === "work"
+                    ? "bg-purple-900 dark:bg-gray-900 text-white rounded-full px-4 py-2"
+                    : ""
                 }`}
-                onClick={() => handleLinkClick('work')}
+                onClick={() => handleLinkClick("work")}
               >
                 Our Work
               </a>
               <a
                 href="#contactus"
                 className={`mt-2 md:mt-0 font-normal text-gray-800 font-bold mr-2 md:mr-4 ${
-                  activeLink === 'contact'
-                    ? 'bg-purple-900 dark:bg-gray-900 text-white rounded-full px-4 py-2'
-                    : ''
+                  activeLink === "contact"
+                    ? "bg-purple-900 dark:bg-gray-900 text-white rounded-full px-4 py-2"
+                    : ""
                 }`}
-                onClick={() => handleLinkClick('contact')}
+                onClick={() => handleLinkClick("contact")}
               >
                 Contact Us
               </a>
