@@ -4,7 +4,7 @@ export default function CarouselCard({ mentor }) {
   return (
     <div>
       <div
-        className="block z-0 bg-center bg-cover relative w-[340px] h-[450px] rounded-[12px] drop-shadow-md before:absolute before:z-[-1] before:inset-x-0 before:bottom-0 before:w-[100%] before:h-[25%] before:bg-gradient-to-t before:from-[#48093f] to-[transparant] before:transition ease before:duration-[0.5s] before:rounded-b-[10px] hover:before:bg-[#48093f] dark:before:bg-gradient-to-t dark:before:from-[black] to-[transparant] dark:hover:before:bg-[black]"
+        className="block z-0 bg-center bg-cover relative w-[340px] h-[450px] rounded-[12px] drop-shadow-md before:absolute before:z-[-1] before:inset-x-0 before:bottom-0 before:w-[100%] before:h-[35%] before:bg-gradient-to-t before:from-[#48093f] to-[transparant] before:transition ease before:duration-[0.5s] before:rounded-b-[10px] hover:before:bg-[#48093f] dark:before:bg-gradient-to-t dark:before:from-[black] to-[transparant] dark:hover:before:bg-[black]"
         style={{
           backgroundImage: `url(${mentor.image})`,
         }}
