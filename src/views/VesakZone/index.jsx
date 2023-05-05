@@ -58,7 +58,8 @@ const VesakZone = () => {
           {/* ---------------------------------------------- */}
 
           <a
-            href="https://drive.google.com/uc?export=download&id=14IFY6t1C9ZoQ3-YKuw8UmNnOasjhTkDc"
+            // href="https://drive.google.com/uc?export=download&id=1uRdZyFqHf3lppGS3PBVYJP150RzW805m"
+            href="https://vesak-bkt-2.s3.ap-southeast-2.amazonaws.com/IM+AR+Vesak+9.apk"
             className="w-30"
           >
             <p
@@ -67,14 +68,15 @@ const VesakZone = () => {
                 fontSize: "18px",
                 textAlign: "center",
               }}
-              className="w-30 px-20 py-5 mt-5 text-sm text-[22px] text-white bg-[#8600a5] rounded-full hover:bg-[#8600a5] dark:bg-[#161616] dark:border-solid dark:border-[0.5px] dark:border-[#ffffff75] dark:hover:border-[#fdac20] dark:hover:text-[#fdac20] hover:bg-[#fdac20]"
+              className="w-30 px-20 py-5 mt-5 text-sm text-[22px] text-white bg-[#8600a5] rounded-full dark:bg-[#161616] dark:border-solid dark:border-[0.5px] dark:border-[#ffffff75] dark:hover:border-[#fdac20] dark:hover:text-[#fdac20] hover:bg-[#fdac20]"
             >
               Up to Android 11
             </p>
           </a>
 
           <a
-            href="https://drive.google.com/uc?export=download&id=1EFjE-7JB7PgvEUc8DEWZvN9vvA5giT1-"
+            // href="https://drive.google.com/uc?export=download&id=1eEYhy1i3f4YgMAsP79jhCWwwuLGOTSQ8"
+            href="https://vesak-bkt-1.s3.ap-southeast-2.amazonaws.com/IM+AR+Vesak.apk"
             className="w-30"
           >
             <p
@@ -83,7 +85,7 @@ const VesakZone = () => {
                 fontSize: "18px",
                 textAlign: "center",
               }}
-              className="w-30 px-20 py-5 mt-5 text-sm text-[22px] text-white bg-[#8600a5] rounded-full hover:bg-[#8600a5] dark:bg-[#161616] dark:border-solid dark:border-[0.5px] dark:border-[#ffffff75] dark:hover:border-[#fdac20] dark:hover:text-[#fdac20] hover:bg-[#fdac20]"
+              className="w-30 px-20 py-5 mt-5 text-sm text-[22px] text-white bg-[#8600a5] rounded-full dark:bg-[#161616] dark:border-solid dark:border-[0.5px] dark:border-[#ffffff75] dark:hover:border-[#fdac20] dark:hover:text-[#fdac20] hover:bg-[#fdac20]"
             >
               Android 12 & 13
             </p>
