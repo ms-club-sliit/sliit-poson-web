@@ -1,17 +1,19 @@
 import image from './../../assets/ourWork/ourWork.png';
+import w1 from './../../assets/ourWork/w1.jpg';
+import w2 from './../../assets/ourWork/w2.jpg';
 
 const OurWork = () => {
   //change the details of the works to be displayed here
   const works = [
     {
-      title: 'Tom & Jerry',
-      thumb: 'https://poson-web.s3.ap-southeast-2.amazonaws.com/videoThumb.png',
-      vsrc: 'https://poson-web.s3.ap-southeast-2.amazonaws.com/Tom+%26+Jerry+_+Is+Jerry+Taking+Care+of+Tom_+_+Classic+Cartoon+_+WB+Kids.mp4',
+      title: 'Poson Thorana 2022',
+      thumb: w1,
+      vsrc: 'https://vesak-bkt-2.s3.ap-southeast-2.amazonaws.com/Poson+Thorana+2022_480p.mp4',
     },
     {
-      title: 'Tom & Jerry',
-      thumb: 'https://poson-web.s3.ap-southeast-2.amazonaws.com/videoThumb.png',
-      vsrc: 'https://poson-web.s3.ap-southeast-2.amazonaws.com/Tom+%26+Jerry+_+Is+Jerry+Taking+Care+of+Tom_+_+Classic+Cartoon+_+WB+Kids.mp4',
+      title: 'Poson Zone 2022',
+      thumb: w2,
+      vsrc: 'https://vesak-bkt-2.s3.ap-southeast-2.amazonaws.com/Poson+Zone+2022_360p.mp4',
     },
   ];
   return (
