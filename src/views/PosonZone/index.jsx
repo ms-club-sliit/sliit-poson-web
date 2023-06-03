@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import GuidelinesModal from "./GuidelinesModal";
 import { useState } from "react";
 
-const VesakZone = () => {
+const PosonZone = () => {
   let [isOpen, setIsOpen] = useState(false);
 
   function closeModal() {
@@ -30,7 +30,7 @@ const VesakZone = () => {
             only.
           </p>
           <p>
-            After installing the application, you can see Vesak Lantern button
+            After installing the application, you can see Poson Lantern button
             and Thorana button.
           </p>
           <p>
@@ -51,7 +51,7 @@ const VesakZone = () => {
             }}
             className="w-30 px-20 py-5 mt-20 text-sm text-[22px] text-white bg-[#8600a5] rounded-full hover:bg-[#8600a5] dark:bg-[#161616] dark:border-solid dark:border-[0.5px] dark:border-[#ffffff75] dark:hover:border-[#fdac20] dark:hover:text-[#fdac20] hover:bg-[#fdac20]"
           >
-            Interactive Vesak Zone
+            Interactive Poson Zone
           </p>
         </Link> */}
 
@@ -110,4 +110,4 @@ const VesakZone = () => {
   );
 };
 
-export default VesakZone;
+export default PosonZone;

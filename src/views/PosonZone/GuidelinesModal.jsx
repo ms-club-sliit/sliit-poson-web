@@ -39,16 +39,16 @@ export default function MyModal({ isOpen, closeModal }) {
                   <div className="mt-2 text-lg">
                     <hr className="my-4" />
                     <p className="text-gray-500 font-bold">
-                      Vesak Lantern Button -
+                      Poson Lantern Button -
                     </p>
                     <li className="text-gray-500">
-                      You can get the QR code for Vesak Lantern in the Lobby
+                      You can get the QR code for Poson Lantern in the Lobby
                       areas from 1st floor to 7th floor in the main building,
                       Lobby area from 2nd floor in the New building and Lobby
                       area in the BM.
                     </li>
                     <li className="text-gray-500">
-                      When you scan the QR code you can see the object (Vesak
+                      When you scan the QR code you can see the object (Poson
                       Lantern).
                     </li>
                     <li className="text-gray-500">
@@ -63,7 +63,7 @@ export default function MyModal({ isOpen, closeModal }) {
                     <hr className="my-4" />
                     <p className="text-gray-500 font-bold">Thorana Button -</p>
                     <li className="text-gray-500">
-                      You can get the QR code for Vesak Thorana in the Island
+                      You can get the QR code for Poson Thorana in the Island
                       areas.
                     </li>
                     <hr className="my-4" />

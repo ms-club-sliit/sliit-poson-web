@@ -33,7 +33,7 @@ const Hero = () => {
   };
 
   const clickExplore = () => {
-    const element = document.getElementById('vesak-zone');
+    const element = document.getElementById('poson-zone');
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
@@ -48,7 +48,7 @@ const Hero = () => {
           <div className="select-none md:select-text flex-1 flex items-center justify-center lg:justify-start basis-full lg:basis-1/2 my-5 mx-4">
             <div>
               <div className="text-5xl text-white font-medium ">
-                Virtual Vesak <br />
+                Virtual Poson <br />
                 Festival
                 <div className="block md:inline text-gold font-railway font-normal">
                   {' '}

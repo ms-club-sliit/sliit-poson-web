@@ -4,7 +4,7 @@
 import { Header, Footer } from "../../components";
 
 import Hero from "../Hero";
-import VesakZone from "../VesakZone";
+import PosonZone from "../PosonZone";
 import Mentors from "../Mentors";
 // import Committee from "../Committee";
 import OurWork from "../OurWork";
@@ -17,8 +17,8 @@ const Home = () => {
       <section id="home">
         <Hero />
       </section>
-      <section id="vesak-zone">
-        <VesakZone />
+      <section id="poson-zone">
+        <PosonZone />
       </section>
       <section id="mentors">
         <Mentors />
